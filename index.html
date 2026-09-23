@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Illary mi vida 💙</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#00060a;height:100vh;overflow:hidden}
+.bg{position:fixed;inset:0;background:radial-gradient(ellipse at 50% 0%,#0a1a2e 0%,#02060f 40%,#000 100%)}
+.moon{position:fixed;top:6%;left:50%;transform:translateX(-50%);width:110px;height:110px;background:radial-gradient(circle at 35% 30%,#fff,#fff8d0);border-radius:50%;box-shadow:0 0 35px 12px rgba(255,255,200,.7),0 0 80px 30px rgba(255,255,200,.25);z-index:5;cursor:pointer}
+.title{position:fixed;top:26%;width:100%;text-align:center;z-index:5}
+.title h1{font-family:'Dancing Script',cursive;font-size:2.6rem;color:#8ecfff;text-shadow:0 0 20px #1e90ff}
+.garden{position:fixed;bottom:0;width:100%;height:70vh;display:flex;justify-content:center;align-items:flex-end;z-index:4}
+.bloom{width:88px;height:68px;position:relative;filter:drop-shadow(0 0 18px #2e9bff) drop-shadow(0 0 30px #1e90ff);animation:sway 4s infinite ease-in-out}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.petal{position:absolute;width:42px;height:48px;background:radial-gradient(ellipse at 30% 20%,#7ec8ff,#1e90ff,#0a3a8a);border-radius:50% 50% 50% 50% / 60% 60% 40% 40%}
+.center{position:absolute;left:50%;top:55%;transform:translate(-50%,-50%);width:32px;height:14px;background:radial-gradient(ellipse,#fff,#a0d8ff);border-radius:50%;box-shadow:0 0 12px white,0 0 20px #7ec8ff;border:2px solid rgba(255,255,255,.8)}
+.stem{width:12px;background:linear-gradient(to top,#0a3a0a,#1a7a2a);border-radius:10px}
+.fire{position:fixed;width:6px;height:6px;background:#ffeb3b;border-radius:50%;box-shadow:0 0 10px #ffeb3b;animation:fl 7s infinite}
+@keyframes fl{0%,100%{transform:translate(0,0)}50%{transform:translate(30px,-30px)}}
+#box{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;justify-content:center;align-items:center;z-index:20;padding:20px}
+.card{background:#0a1930;border:1px solid #1e90ff;border-radius:24px;padding:28px;max-width:340px;width:100%;text-align:center;color:white}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="moon" onclick="document.getElementById('box').style.display='flex'"></div>
+<div class="title"><h1>Illary, mi vida 💙</h1><p style="color:rgba(255,255,255,.6);font-size:.8rem">Toca la luna</p></div>
+<div class="garden" id="g"></div>
+<div id="box" onclick="this.style.display='none'"><div class="card"><h2 style="font-family:'Dancing Script',cursive;color:#8ecfff;font-size:2.2rem">Para ti, Illary 💙</h2><p>Estas flores azules brillan como tú en mi vida
